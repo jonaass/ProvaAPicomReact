@@ -9,7 +9,7 @@ const [resposta,setResposta] = useState('');
 
 function adicionar() {
     setNumeros([...numeros, numero])
-    setNumero('');
+    setNumero(0);
 } 
 
 async function verificarMaior() {
@@ -27,13 +27,13 @@ async function verificarMaior() {
             </div>
 
             <div>
-                {numeros.map(item =>
-                 <div> {item} </div>    
+                \{numero.map(item =>
+                  <div> {item} </div>  
                 )}
             </div>
 
             <div>
-              <button>Verificar</button> Maior Número é {resposta}
+              <button onClick={verificarMaior}>Verificar</button> Maior Número é {resposta}
             </div>
         </main>
     )
