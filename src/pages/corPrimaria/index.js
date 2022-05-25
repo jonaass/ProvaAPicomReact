@@ -31,7 +31,7 @@ export default function Index() {
             </div>
 
             <div>
-                È cor primaria? {resposta}
+                É uma cor primaria? {resposta}
             </div>
 
         </main>
