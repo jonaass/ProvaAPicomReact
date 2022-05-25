@@ -11,10 +11,10 @@ export default function Index() {
         const resp = await axios.get('http://localhost:5000/dia2/corprimaria/' + cor );
         
         if (resp.data.primaria === true) {
-            setResposta('SIM!!');
+            setResposta('TRUE!!');
         }
         else{
-         setResposta('NÃO!!');
+         setResposta('FALSE!!');
         }
     }
 
